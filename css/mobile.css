@@ -1,0 +1,421 @@
+/* +++ === MEDIA QUIERIES === +++ */
+/* DESKTOP +++ */
+
+@media all and (min-width: 768px) and (max-width: 992px)
+{   
+
+    /* +++ TABLET HOSTING LIST +++ */
+    .hostingList {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cityHostingList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popularCard img {
+        height: 160px;
+        width: 400px;
+        background-color: #ffffff;
+    }
+
+    .popularDescription {
+        height: 160px;
+        width: 400px;
+    }
+
+    .popularDescription h3, p, i {
+        font-size: large;
+    }
+
+    .popularDescription i {
+        margin-top: 1px;
+    }
+
+    /* TABLET ACTIVITIES */
+    .activities {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 5%;
+    }
+    
+    .activitiesCard {
+        flex-basis: 100%;
+    }
+    
+    .activitiesCard img {
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .activitiesCard h3 {
+        height: 40px;
+        padding: 20px 0 40px 30px;
+        font-size: large;
+    }
+    
+    /* TABLET FOOTER */
+    .footer {
+        background-color: #F2F2F2;
+        display: flex;
+        margin-top: 1820px;
+        padding: 30px 0;
+        gap: 100px;
+    }
+
+    .about {
+        padding-left: 50px;
+    }
+    
+    .footer ul {
+        padding: 0;
+    }
+    
+    .footer li {
+        margin-top: 10px;
+    }
+}
+
+/* +++ MOBILE +++ */
+
+@media screen and (max-width: 768px)
+{
+    /* MOBILE HEADER */
+    header {
+        height: 265px;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo {
+        width: 80%;
+        padding: 40px 30px 0px 30px;
+    }
+
+    /* MOBILE NAV */
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li {
+        flex-basis: 100%;
+    }
+
+    nav a {
+        display: block;
+        font-size:xx-large;
+        border-bottom: 6px solid #F2F2F2;
+        padding-bottom: 25px;
+        margin: 0;
+    }
+    
+    nav a:hover {
+        border-top: 0;
+        border-color: #0065FC;
+        margin: 0;
+        padding: 0 0 25px 0;
+    }
+
+    /* MOBILE SEARCH BAR */
+    .searchBar {
+        margin-top: 65px;
+    }
+
+    .searchBar {
+        font-size: x-large;
+    }
+
+    .searchBar p {
+        font-size: 34px;
+    }
+
+    .searchForm {
+        display: flex; /* stop le chevauchement */
+        text-align: center; 
+        padding-top: 30px;
+        margin: 0;
+    }
+    
+    .searchForm .fa-map-marker-alt {
+        font-size: xx-large;
+        align-self: center; /* Maintient la taille de l'icone */
+        padding: 30px 35px;
+        border-radius: 30px 0 0 30px;
+        margin: -10px -10px;
+    }
+    
+    .searchForm input {
+        padding: 25px;
+        border: 2px solid #f2f2f2;
+    }
+
+    .searchForm .btnDesktop {
+        display: none;
+    }
+
+    .searchForm .btnMobile {
+        display: initial;
+        color: #ffffff;
+        padding: 26px 30px;
+        border-radius: 30px;
+        margin-left: -40px;
+    }
+
+    .searchForm .fa-search {
+        font-size: xx-large;
+
+    }
+
+    /* MOBILE filtersList */
+    .filtersList {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+
+    .filtersList h2, a {
+        font-size: xx-large;
+        margin-bottom: 40px;
+    }
+
+    .filtersList ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .filtersChoise {
+        border: 5px solid #d3d3d3;
+        border-radius: 50px;
+        padding-right: 25px;
+    }
+    
+    .filtersChoise .fas {
+        background-color: #DEEBFF;
+        color: #0065FC;
+        border-radius: 50px;
+        height: 90px;
+        width: 90px;
+        text-align: center;
+        margin-right: 10px;
+        font-size: xx-large;
+    }
+
+    .filtersChoise .fa-money-bill-wave {
+        padding: 29px 29px 29px 24px;
+    }
+
+    .filtersChoise .fa-child {
+        padding:30px 28px 25px 25px;
+    }
+
+    .filtersChoise .fa-heart {
+        padding: 30px 23px 20px 20px;
+    }
+
+    .filtersChoise .fa-dog {
+        padding: 27px 22px 20px 20px;
+    }
+
+    .filterInfo {
+        display: flex;
+        align-items: center;
+    }
+
+    .filterInfo p {
+        font-size: xx-large;
+        margin: 50px 0;
+    }
+
+    .fas.fa-info {
+        color: #0065FC;
+        border: 2px solid #d3d3d3;
+        padding: 20px;
+        font-size: large;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MOBILE HOSTING */
+    .hostingList {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+    }
+
+    .hostingList .popular {
+        border-radius: 0;
+        flex-basis: 100%;
+        padding: 0 0 60px 0;
+    }
+
+    .popularHeader {
+        font-size: x-large;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .fa-chart-line {
+        font-size: xx-large;
+        margin-top: 50px;
+    }
+
+    .popularCard {
+        height: 280px;
+        border-radius: 50px;
+        margin: 0 30px 20px 30px;
+    }
+
+    .popularCard img {
+        height: 275px;
+        width: 300px;
+        border-radius: 50px 0 0 50px;
+        padding: 10px 0 7px 10px;
+    }
+    
+    .popularDescription {
+        height: 270px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 10px 20px;
+    }
+    
+    .popularDescription h3, strong {
+        font-size: xx-large;
+        margin: 0;
+    }
+    
+    .popularDescription p, .popularDescription strong {
+        font-size: xx-large;
+        padding: 5px 0;
+        margin: 0;
+    }
+    
+    .popularDescription i {
+        margin-top: 60px;
+        font-size: x-large;
+    }
+
+    /* MOBILE CITY */
+    .hostingList .city {
+        flex-basis: 100%;
+        background-color: white;
+    }
+
+    .hostingList .city h1 {
+        font-size: xx-large;
+        margin-top: 0;
+    }
+    .cityHostingList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cityCard {
+        flex-basis: 30%;
+        flex-grow: 0;
+        background-color: #ffffff;
+        border-radius: 25px;
+        border: 5px solid #ffffff;
+        box-shadow: 0 0 15px #d3d3d3;
+        padding: 5px 5px 0 5px;
+    }
+    
+    .cityCard img {
+        border-radius: 20px 20px 0 0;
+        height: 225px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .cityCardDescription {
+        margin: 10px 15px;
+    }
+    
+    .cityCardDescription h3, strong {
+        font-size: xx-large;
+        margin: 0;
+    }
+    
+    .cityCardDescription p, .cityCardDescription strong {
+        font-size: x-large;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .fa-star {
+        font-size: x-large;
+        padding-top: 5px;
+    }
+
+    /* MOBILE ACTIVITIES */
+    
+    .activities {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activitiesCard {
+        border-radius: 30px;
+    }
+
+    .activitiesCard img {
+        height: 300px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .activitiesCard h3 {
+        height: 80px;
+        padding: 20px 0 40px 30px;
+        font-size: xx-large;
+    }
+
+    /* MOBILE FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2020px;
+        gap: 0;
+    }
+    
+    .footerList {
+        padding: 0 80px;
+    }
+    
+    .footerList ul {
+        margin-bottom: 50px;
+    }
+
+    .footerList h2 {
+        font-size: xx-large;
+        margin-bottom: 30px;
+    }
+    
+    .footer li {
+        font-size: xx-large;
+        margin-top: 20px;
+    }
+
+}
+
+
